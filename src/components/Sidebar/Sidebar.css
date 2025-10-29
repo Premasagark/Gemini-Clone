@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer base {
+  .sidebar {
+    @apply min-h-[100vh] inline-flex flex-col justify-between bg-[#f0f4f9] py-[25px] px-[15px];
+  }
+
+  .sidebar img {
+    @apply w-5;
+  }
+
+  .sidebar .new-chat {
+    @apply mt-[50px] inline-flex items-center gap-2.5 py-2.5 px-[15px] bg-[#e6eaf1] rounded-[50px] text-[14px] hover:bg-gray-200 cursor-pointer;
+  }
+  .sidebar .recent-entry {
+    @apply flex  items-center gap-2.5 p-2.5 pr-10 rounded-[50px] text-[#282828] cursor-pointer hover:bg-[#e2e6eb];
+  }
+
+  .sidebar .bottom-item {
+    @apply pr-2.5 cursor-pointer;
+  }
+
+  @media (max-width: 600px) {
+    .sidebar {
+      @apply hidden;
+    }
+  }
+}
